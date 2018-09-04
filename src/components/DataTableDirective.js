@@ -110,7 +110,9 @@ export default function DataTableDirective($window, $timeout, $parse) {
             });
           }
 
-          $window.addEventListener('resize', calculateResize);
+          angular.element($window).on('resize', throttle(() => {
+            $timeout(resize);
+          }));
 
           // When an item is hidden for example
           // in a tab with display none, the height

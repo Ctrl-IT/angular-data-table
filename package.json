@@ -2,23 +2,19 @@
   "name": "angular-data-table",
   "title": "AngularJS Data-Table",
   "description": "A feature-rich but lightweight ES6 AngularJS Data Table crafted for large data sets!",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "repository": {
     "type": "git",
-    "url": "git@github.com:jonshaffer/angular-data-table.git",
-    "github": "https://github.com/jonshaffer/angular-data-table.git"
+    "url": "git@github.com:Ctrl-IT/angular-data-table.git",
+    "github": "http://github.com/Ctrl-IT/angular-data-table.git"
   },
   "main": "./release/dataTable.js",
-  "files": [
-    "release/"
-  ],
-  "homepage": "http://jonshaffer.github.io/angular-data-table/",
+  "homepage": "http://swimlane.com/",
   "author": {
     "name": "Swimlane",
     "email": "austin@swimlane.com",
     "web": "http://swimlane.com/"
   },
-  "license": "MIT",
   "licenses": [
     {
       "type": "MIT",
@@ -114,6 +110,16 @@
     "watchify": "^3.7.0",
     "webpack": "^2.4.1",
     "webpack-dev-server": "^2.4.5"
+  },
+  "jspm": {
+    "dependencies": {
+      "angular": "npm:angular@^1.4.0"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.22",
+      "babel-runtime": "npm:babel-runtime@^5.6.4",
+      "core-js": "npm:core-js@^1.1.1"
+    }
   },
   "babel": {
     "sourceMaps": false,
